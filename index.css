@@ -38,18 +38,35 @@ nav {
 #left-logo-sect > a > span {
   color: var(--mainOrange);
 }
+#main-section-1,
+#main-section-5,
+#footer-section {
+  padding-top: 4px; /* Adjust for the fixed navigation bar */
+}
+
+#main-section-4 {
+  padding-top: 90px;
+}
+
+#main-section-3 {
+  padding-top: 1px;
+}
 
 .nav-contain {
-  display: flex;
-  justify-content: space-around;
-  margin-left: 50%;
+  /* display: flex;
+  justify-content: end; */
+  position: fixed;
+  top: -20px;
+  width: 100%;
+  background-color: #fff; /* Set your desired background color */
+  z-index: 100;
 }
 
 #right-nav-buttons-cont > a {
   font-size: 16px;
+  width: 100%;
   margin-right: 20px;
-  padding-bottom: 5px;
-  color: #808080;
+  color: #625d5d;
   text-decoration: none;
 }
 
@@ -150,6 +167,7 @@ nav {
 
 .main-wrapper.sect-2 {
   margin: 10vh 0px;
+  padding-top: 20px;
 }
 
 .container-section-2 {
