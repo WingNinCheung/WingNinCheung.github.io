@@ -78,9 +78,21 @@ nav {
 
 .first-pic {
   height: 15%;
-  width: 13%;
+  width: 15%;
   margin-left: 10%;
   border-radius: 100%;
+}
+
+@media only screen and (max-width: 1500px) {
+  .first-pic {
+    margin-left: 0; /* Change margin to 0 when screen width is 600px or less */
+    margin-right: 10%; /* Add margin-right to push the image to the left */
+  }
+
+  .first-pic-about {
+    border-radius: 100%;
+    height: 20%;
+  }
 }
 
 /* MAIN LANDING PAGE - SECTION 1 */
@@ -231,36 +243,13 @@ nav {
 
 .first-pic-about {
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 3%;
 }
-
-.first-pic-about.top-pic {
-  width: 200px;
-  height: 200px;
-  max-width: 200px;
-  max-height: 200px;
-  z-index: 1;
-  position: relative;
-  top: 120%;
-  right: 30%;
-}
-
-.first-pic-about.mid-pic {
-  width: 200px;
-  height: 200px;
-  max-width: 200px;
-  max-height: 200px;
-  z-index: 1;
-  position: relative;
-  top: 100%;
-  right: -30%;
-}
-
-.first-pic-about.bottom-pic {
-  width: 350px;
-  height: 350px;
-  max-width: 600px;
-  max-height: 600px;
+@media only screen and (max-width: 1500px) {
+  .first-pic-about {
+    border-radius: 20%;
+    min-width: 60%;
+  }
 }
 
 .center-btn-wrapper {
@@ -747,33 +736,6 @@ grid > div > img {
   color: var(--textGray);
 }
 
-/* ----------SCREEN SIZES BIGGER THAN 1460PX ------------------*/
-
-@media screen and (max-width: 1460px) {
-  .first-pic-about.top-pic {
-    width: 150px;
-    margin-right: 300px;
-    margin-bottom: -175px;
-    max-width: 175px;
-    max-height: 175px;
-    z-index: 1;
-  }
-
-  .first-pic-about.mid-pic {
-    margin-bottom: -125px;
-    margin-left: 300px;
-    width: 175px;
-    z-index: 1;
-  }
-
-  .first-pic-about.bottom-pic {
-    width: 260px;
-    height: 260px;
-    max-width: 600px;
-    max-height: 600px;
-  }
-}
-
 /* ------------------SCREEN SIZES SMALLER THAN 1340px --------------- */
 
 @media screen and (max-width: 1340px) {
@@ -824,22 +786,6 @@ grid > div > img {
     flex-direction: column;
     height: fit-content;
     margin-top: 3vh;
-  }
-
-  .first-pic-about.top-pic {
-    margin-top: 40px;
-    margin-right: 300px;
-    margin-bottom: -200px;
-  }
-
-  .first-pic-about.mid-pic {
-    margin-left: 330px;
-    width: 180px;
-  }
-
-  .first-pic-about.bottom-pic {
-    width: 225px;
-    height: 225px;
   }
 
   .container-section-2 > div > h2 {
@@ -981,22 +927,6 @@ grid > div > img {
 }
 
 @media screen and (max-width: 579px) {
-  /* ABOUT ME PIC COLLAGE */
-
-  .first-pic-about.top-pic {
-    width: 100px;
-    height: 100px;
-  }
-
-  .first-pic-about.mid-pic {
-    width: 135px;
-  }
-
-  .first-pic-about.bottom-pic {
-    width: 220px;
-    height: 220px;
-  }
-
   /* LANDING TEXT */
 
   .main-header-text > h1:first-child {
@@ -1104,23 +1034,6 @@ grid > div > img {
   .main-paragraph-styles {
     font-size: 16px;
   }
-
-  .first-pic-about.top-pic {
-    width: 80px;
-    height: 80px;
-    margin-right: 230px;
-    margin-bottom: -120px;
-  }
-
-  .first-pic-about.mid-pic {
-    margin-left: 260px;
-    width: 115px;
-  }
-
-  .first-pic-about.bottom-pic {
-    width: 180px;
-    height: 180px;
-  }
 }
 
 @media screen and (max-width: 460px) {
@@ -1180,22 +1093,5 @@ grid > div > img {
 
   .main-paragraph-styles {
     font-size: 15px;
-  }
-
-  .first-pic-about.top-pic {
-    width: 80px;
-    height: 80px;
-    margin-right: 230px;
-    margin-bottom: -120px;
-  }
-
-  .first-pic-about.mid-pic {
-    margin-left: 240px;
-    width: 100px;
-  }
-
-  .first-pic-about.bottom-pic {
-    width: 160px;
-    height: 160px;
   }
 }
